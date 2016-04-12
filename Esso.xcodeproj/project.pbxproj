@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F102A5B1CBD9C2000205A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A5A1CBD9C2000205A5A /* AppDelegate.swift */; };
+		6F102A5D1CBD9C2000205A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A5C1CBD9C2000205A5A /* ViewController.swift */; };
+		6F102A5F1CBD9C2000205A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F102A5E1CBD9C2000205A5A /* Assets.xcassets */; };
+		6F102A621CBD9C2000205A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F102A601CBD9C2000205A5A /* Main.storyboard */; };
+		6F102A6D1CBD9C2000205A5A /* EssoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A6C1CBD9C2000205A5A /* EssoTests.swift */; };
+		6F102A781CBD9C2000205A5A /* EssoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A771CBD9C2000205A5A /* EssoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F102A691CBD9C2000205A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F102A4F1CBD9C2000205A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F102A561CBD9C2000205A5A;
+			remoteInfo = Esso;
+		};
+		6F102A741CBD9C2000205A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F102A4F1CBD9C2000205A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F102A561CBD9C2000205A5A;
+			remoteInfo = Esso;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F102A571CBD9C2000205A5A /* Esso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F102A5A1CBD9C2000205A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F102A5C1CBD9C2000205A5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F102A5E1CBD9C2000205A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F102A611CBD9C2000205A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F102A631CBD9C2000205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F102A681CBD9C2000205A5A /* EssoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F102A6C1CBD9C2000205A5A /* EssoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssoTests.swift; sourceTree = "<group>"; };
+		6F102A6E1CBD9C2000205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F102A731CBD9C2000205A5A /* EssoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F102A771CBD9C2000205A5A /* EssoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssoUITests.swift; sourceTree = "<group>"; };
+		6F102A791CBD9C2000205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F102A541CBD9C2000205A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A651CBD9C2000205A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A701CBD9C2000205A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F102A4E1CBD9C2000205A5A = {
+			isa = PBXGroup;
+			children = (
+				6F102A591CBD9C2000205A5A /* Esso */,
+				6F102A6B1CBD9C2000205A5A /* EssoTests */,
+				6F102A761CBD9C2000205A5A /* EssoUITests */,
+				6F102A581CBD9C2000205A5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F102A581CBD9C2000205A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F102A571CBD9C2000205A5A /* Esso.app */,
+				6F102A681CBD9C2000205A5A /* EssoTests.xctest */,
+				6F102A731CBD9C2000205A5A /* EssoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F102A591CBD9C2000205A5A /* Esso */ = {
+			isa = PBXGroup;
+			children = (
+				6F102A5A1CBD9C2000205A5A /* AppDelegate.swift */,
+				6F102A5C1CBD9C2000205A5A /* ViewController.swift */,
+				6F102A5E1CBD9C2000205A5A /* Assets.xcassets */,
+				6F102A601CBD9C2000205A5A /* Main.storyboard */,
+				6F102A631CBD9C2000205A5A /* Info.plist */,
+			);
+			path = Esso;
+			sourceTree = "<group>";
+		};
+		6F102A6B1CBD9C2000205A5A /* EssoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F102A6C1CBD9C2000205A5A /* EssoTests.swift */,
+				6F102A6E1CBD9C2000205A5A /* Info.plist */,
+			);
+			path = EssoTests;
+			sourceTree = "<group>";
+		};
+		6F102A761CBD9C2000205A5A /* EssoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F102A771CBD9C2000205A5A /* EssoUITests.swift */,
+				6F102A791CBD9C2000205A5A /* Info.plist */,
+			);
+			path = EssoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F102A561CBD9C2000205A5A /* Esso */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F102A7C1CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "Esso" */;
+			buildPhases = (
+				6F102A531CBD9C2000205A5A /* Sources */,
+				6F102A541CBD9C2000205A5A /* Frameworks */,
+				6F102A551CBD9C2000205A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Esso;
+			productName = Esso;
+			productReference = 6F102A571CBD9C2000205A5A /* Esso.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F102A671CBD9C2000205A5A /* EssoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F102A7F1CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "EssoTests" */;
+			buildPhases = (
+				6F102A641CBD9C2000205A5A /* Sources */,
+				6F102A651CBD9C2000205A5A /* Frameworks */,
+				6F102A661CBD9C2000205A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F102A6A1CBD9C2000205A5A /* PBXTargetDependency */,
+			);
+			name = EssoTests;
+			productName = EssoTests;
+			productReference = 6F102A681CBD9C2000205A5A /* EssoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F102A721CBD9C2000205A5A /* EssoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F102A821CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "EssoUITests" */;
+			buildPhases = (
+				6F102A6F1CBD9C2000205A5A /* Sources */,
+				6F102A701CBD9C2000205A5A /* Frameworks */,
+				6F102A711CBD9C2000205A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F102A751CBD9C2000205A5A /* PBXTargetDependency */,
+			);
+			name = EssoUITests;
+			productName = EssoUITests;
+			productReference = 6F102A731CBD9C2000205A5A /* EssoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F102A4F1CBD9C2000205A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Luke McGartland";
+				TargetAttributes = {
+					6F102A561CBD9C2000205A5A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6F102A671CBD9C2000205A5A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6F102A561CBD9C2000205A5A;
+					};
+					6F102A721CBD9C2000205A5A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6F102A561CBD9C2000205A5A;
+					};
+				};
+			};
+			buildConfigurationList = 6F102A521CBD9C2000205A5A /* Build configuration list for PBXProject "Esso" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F102A4E1CBD9C2000205A5A;
+			productRefGroup = 6F102A581CBD9C2000205A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F102A561CBD9C2000205A5A /* Esso */,
+				6F102A671CBD9C2000205A5A /* EssoTests */,
+				6F102A721CBD9C2000205A5A /* EssoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F102A551CBD9C2000205A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F102A5F1CBD9C2000205A5A /* Assets.xcassets in Resources */,
+				6F102A621CBD9C2000205A5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A661CBD9C2000205A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A711CBD9C2000205A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F102A531CBD9C2000205A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F102A5D1CBD9C2000205A5A /* ViewController.swift in Sources */,
+				6F102A5B1CBD9C2000205A5A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A641CBD9C2000205A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F102A6D1CBD9C2000205A5A /* EssoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A6F1CBD9C2000205A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F102A781CBD9C2000205A5A /* EssoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F102A6A1CBD9C2000205A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F102A561CBD9C2000205A5A /* Esso */;
+			targetProxy = 6F102A691CBD9C2000205A5A /* PBXContainerItemProxy */;
+		};
+		6F102A751CBD9C2000205A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F102A561CBD9C2000205A5A /* Esso */;
+			targetProxy = 6F102A741CBD9C2000205A5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F102A601CBD9C2000205A5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F102A611CBD9C2000205A5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F102A7A1CBD9C2000205A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F102A7B1CBD9C2000205A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6F102A7D1CBD9C2000205A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Esso/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.Esso;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F102A7E1CBD9C2000205A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Esso/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.Esso;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F102A801CBD9C2000205A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EssoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.EssoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esso.app/Contents/MacOS/Esso";
+			};
+			name = Debug;
+		};
+		6F102A811CBD9C2000205A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EssoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.EssoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esso.app/Contents/MacOS/Esso";
+			};
+			name = Release;
+		};
+		6F102A831CBD9C2000205A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EssoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.EssoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Esso;
+			};
+			name = Debug;
+		};
+		6F102A841CBD9C2000205A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EssoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.EssoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Esso;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F102A521CBD9C2000205A5A /* Build configuration list for PBXProject "Esso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F102A7A1CBD9C2000205A5A /* Debug */,
+				6F102A7B1CBD9C2000205A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F102A7C1CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "Esso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F102A7D1CBD9C2000205A5A /* Debug */,
+				6F102A7E1CBD9C2000205A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F102A7F1CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "EssoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F102A801CBD9C2000205A5A /* Debug */,
+				6F102A811CBD9C2000205A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F102A821CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "EssoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F102A831CBD9C2000205A5A /* Debug */,
+				6F102A841CBD9C2000205A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F102A4F1CBD9C2000205A5A /* Project object */;
+}
