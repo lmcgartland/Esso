@@ -13,6 +13,10 @@
 		6F102A621CBD9C2000205A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F102A601CBD9C2000205A5A /* Main.storyboard */; };
 		6F102A6D1CBD9C2000205A5A /* EssoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A6C1CBD9C2000205A5A /* EssoTests.swift */; };
 		6F102A781CBD9C2000205A5A /* EssoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A771CBD9C2000205A5A /* EssoUITests.swift */; };
+		6F102A8E1CBDA84100205A5A /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6F102A8D1CBDA84100205A5A /* icon.icns */; };
+		6F102A911CBDA84100205A5A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A901CBDA84100205A5A /* ShareViewController.swift */; };
+		6F102A941CBDA84100205A5A /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F102A921CBDA84100205A5A /* ShareViewController.xib */; };
+		6F102A981CBDA84100205A5A /* EssoShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F102A8A1CBDA84100205A5A /* EssoShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +34,28 @@
 			remoteGlobalIDString = 6F102A561CBD9C2000205A5A;
 			remoteInfo = Esso;
 		};
+		6F102A961CBDA84100205A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F102A4F1CBD9C2000205A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F102A891CBDA84100205A5A;
+			remoteInfo = EssoShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F102A9C1CBDA84100205A5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F102A981CBDA84100205A5A /* EssoShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F102A571CBD9C2000205A5A /* Esso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esso.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +70,13 @@
 		6F102A731CBD9C2000205A5A /* EssoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F102A771CBD9C2000205A5A /* EssoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssoUITests.swift; sourceTree = "<group>"; };
 		6F102A791CBD9C2000205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F102A851CBDA62100205A5A /* EssoScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = EssoScript.scpt; sourceTree = "<group>"; };
+		6F102A8A1CBDA84100205A5A /* EssoShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EssoShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F102A8D1CBDA84100205A5A /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		6F102A8F1CBDA84100205A5A /* EssoShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EssoShare.entitlements; sourceTree = "<group>"; };
+		6F102A901CBDA84100205A5A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		6F102A931CBDA84100205A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		6F102A951CBDA84100205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F102A871CBDA84100205A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +117,7 @@
 				6F102A591CBD9C2000205A5A /* Esso */,
 				6F102A6B1CBD9C2000205A5A /* EssoTests */,
 				6F102A761CBD9C2000205A5A /* EssoUITests */,
+				6F102A8B1CBDA84100205A5A /* EssoShare */,
 				6F102A581CBD9C2000205A5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +128,7 @@
 				6F102A571CBD9C2000205A5A /* Esso.app */,
 				6F102A681CBD9C2000205A5A /* EssoTests.xctest */,
 				6F102A731CBD9C2000205A5A /* EssoUITests.xctest */,
+				6F102A8A1CBDA84100205A5A /* EssoShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +136,7 @@
 		6F102A591CBD9C2000205A5A /* Esso */ = {
 			isa = PBXGroup;
 			children = (
+				6F102A851CBDA62100205A5A /* EssoScript.scpt */,
 				6F102A5A1CBD9C2000205A5A /* AppDelegate.swift */,
 				6F102A5C1CBD9C2000205A5A /* ViewController.swift */,
 				6F102A5E1CBD9C2000205A5A /* Assets.xcassets */,
@@ -122,6 +164,26 @@
 			path = EssoUITests;
 			sourceTree = "<group>";
 		};
+		6F102A8B1CBDA84100205A5A /* EssoShare */ = {
+			isa = PBXGroup;
+			children = (
+				6F102A901CBDA84100205A5A /* ShareViewController.swift */,
+				6F102A921CBDA84100205A5A /* ShareViewController.xib */,
+				6F102A951CBDA84100205A5A /* Info.plist */,
+				6F102A8C1CBDA84100205A5A /* Supporting Files */,
+			);
+			path = EssoShare;
+			sourceTree = "<group>";
+		};
+		6F102A8C1CBDA84100205A5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F102A8D1CBDA84100205A5A /* icon.icns */,
+				6F102A8F1CBDA84100205A5A /* EssoShare.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +194,12 @@
 				6F102A531CBD9C2000205A5A /* Sources */,
 				6F102A541CBD9C2000205A5A /* Frameworks */,
 				6F102A551CBD9C2000205A5A /* Resources */,
+				6F102A9C1CBDA84100205A5A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F102A971CBDA84100205A5A /* PBXTargetDependency */,
 			);
 			name = Esso;
 			productName = Esso;
@@ -178,6 +242,23 @@
 			productReference = 6F102A731CBD9C2000205A5A /* EssoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6F102A891CBDA84100205A5A /* EssoShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F102A991CBDA84100205A5A /* Build configuration list for PBXNativeTarget "EssoShare" */;
+			buildPhases = (
+				6F102A861CBDA84100205A5A /* Sources */,
+				6F102A871CBDA84100205A5A /* Frameworks */,
+				6F102A881CBDA84100205A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EssoShare;
+			productName = EssoShare;
+			productReference = 6F102A8A1CBDA84100205A5A /* EssoShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +280,9 @@
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 6F102A561CBD9C2000205A5A;
 					};
+					6F102A891CBDA84100205A5A = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 6F102A521CBD9C2000205A5A /* Build configuration list for PBXProject "Esso" */;
@@ -217,6 +301,7 @@
 				6F102A561CBD9C2000205A5A /* Esso */,
 				6F102A671CBD9C2000205A5A /* EssoTests */,
 				6F102A721CBD9C2000205A5A /* EssoUITests */,
+				6F102A891CBDA84100205A5A /* EssoShare */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +327,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F102A881CBDA84100205A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F102A941CBDA84100205A5A /* ShareViewController.xib in Resources */,
+				6F102A8E1CBDA84100205A5A /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F102A861CBDA84100205A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F102A911CBDA84100205A5A /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,6 +388,11 @@
 			target = 6F102A561CBD9C2000205A5A /* Esso */;
 			targetProxy = 6F102A741CBD9C2000205A5A /* PBXContainerItemProxy */;
 		};
+		6F102A971CBDA84100205A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F102A891CBDA84100205A5A /* EssoShare */;
+			targetProxy = 6F102A961CBDA84100205A5A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -295,6 +402,14 @@
 				6F102A611CBD9C2000205A5A /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F102A921CBDA84100205A5A /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F102A931CBDA84100205A5A /* Base */,
+			);
+			name = ShareViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -387,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Esso/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.Esso;
@@ -399,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Esso/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.Esso;
@@ -456,6 +573,32 @@
 			};
 			name = Release;
 		};
+		6F102A9A1CBDA84100205A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EssoShare/EssoShare.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EssoShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.Esso.EssoShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6F102A9B1CBDA84100205A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EssoShare/EssoShare.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EssoShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appineering.Esso.EssoShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +632,14 @@
 			buildConfigurations = (
 				6F102A831CBD9C2000205A5A /* Debug */,
 				6F102A841CBD9C2000205A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F102A991CBDA84100205A5A /* Build configuration list for PBXNativeTarget "EssoShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F102A9A1CBDA84100205A5A /* Debug */,
+				6F102A9B1CBDA84100205A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
