@@ -713,12 +713,12 @@
                                 <rect key="frame" x="0.0" y="40" width="550" height="318"/>
                                 <subviews>
                                     <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q7-0c-hgb">
-                                        <rect key="frame" x="66" y="8" width="476" height="302"/>
+                                        <rect key="frame" x="133" y="8" width="344" height="302"/>
                                     </pdfView>
                                     <pdfThumbnailView translatesAutoresizingMaskIntoConstraints="NO" id="jMW-pQ-fho">
-                                        <rect key="frame" x="8" y="8" width="50" height="302"/>
+                                        <rect key="frame" x="8" y="8" width="66" height="302"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="lLg-P5-U3G"/>
+                                            <constraint firstAttribute="width" constant="66" id="lLg-P5-U3G"/>
                                         </constraints>
                                         <size key="thumbnailSize" width="64" height="64"/>
                                         <connections>
@@ -727,11 +727,11 @@
                                     </pdfThumbnailView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="7Q7-0c-hgb" firstAttribute="leading" secondItem="jMW-pQ-fho" secondAttribute="trailing" constant="8" id="JvD-th-EoA"/>
+                                    <constraint firstItem="7Q7-0c-hgb" firstAttribute="leading" secondItem="jMW-pQ-fho" secondAttribute="trailing" constant="59" id="JvD-th-EoA"/>
                                     <constraint firstItem="jMW-pQ-fho" firstAttribute="top" secondItem="lJi-d3-GBj" secondAttribute="top" constant="8" id="KcC-jd-zI9"/>
                                     <constraint firstItem="7Q7-0c-hgb" firstAttribute="top" secondItem="lJi-d3-GBj" secondAttribute="top" constant="8" id="L05-aB-jVg"/>
                                     <constraint firstItem="jMW-pQ-fho" firstAttribute="leading" secondItem="lJi-d3-GBj" secondAttribute="leading" constant="8" id="Taj-o4-Xlr"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Q7-0c-hgb" secondAttribute="trailing" constant="8" id="Y2V-WU-peI"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Q7-0c-hgb" secondAttribute="trailing" constant="73" id="Y2V-WU-peI"/>
                                     <constraint firstAttribute="bottom" secondItem="jMW-pQ-fho" secondAttribute="bottom" constant="8" id="mKh-tY-3je"/>
                                     <constraint firstAttribute="bottom" secondItem="7Q7-0c-hgb" secondAttribute="bottom" constant="8" id="ma0-7Q-CWe"/>
                                 </constraints>
@@ -750,36 +750,14 @@
                             <constraint firstItem="osp-Aa-zFl" firstAttribute="leading" secondItem="lJi-d3-GBj" secondAttribute="trailing" id="zsT-Uq-YoF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pdfThumbnailView" destination="jMW-pQ-fho" id="7fu-AF-ikH"/>
+                        <outlet property="pdfView" destination="7Q7-0c-hgb" id="QoE-BJ-mN2"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="179.5" y="699"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Sdb-ak-SJF">
-            <objects>
-                <viewController id="6vp-aB-iUi" sceneMemberID="viewController">
-                    <view key="view" id="y9f-Id-c9Z">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="RAh-ir-3rj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1336" y="422"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="OPg-CN-RYt">
-            <objects>
-                <viewController id="JY3-Tl-eWn" sceneMemberID="viewController">
-                    <view key="view" id="cKW-f7-uB7">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="4cb-W2-gwy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1336" y="783"/>
         </scene>
     </scenes>
 </document>
