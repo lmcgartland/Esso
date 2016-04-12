@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
-        <plugIn identifier="com.apple.pdfkit.ibplugin" version="10116"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="9531"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -712,16 +712,19 @@
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="lJi-d3-GBj">
                                 <rect key="frame" x="0.0" y="40" width="550" height="318"/>
                                 <subviews>
+                                    <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q7-0c-hgb">
+                                        <rect key="frame" x="66" y="8" width="476" height="302"/>
+                                    </pdfView>
                                     <pdfThumbnailView translatesAutoresizingMaskIntoConstraints="NO" id="jMW-pQ-fho">
                                         <rect key="frame" x="8" y="8" width="50" height="302"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="lLg-P5-U3G"/>
                                         </constraints>
                                         <size key="thumbnailSize" width="64" height="64"/>
+                                        <connections>
+                                            <outlet property="pdfView" destination="7Q7-0c-hgb" id="Vyf-IL-EQl"/>
+                                        </connections>
                                     </pdfThumbnailView>
-                                    <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q7-0c-hgb">
-                                        <rect key="frame" x="66" y="8" width="476" height="302"/>
-                                    </pdfView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7Q7-0c-hgb" firstAttribute="leading" secondItem="jMW-pQ-fho" secondAttribute="trailing" constant="8" id="JvD-th-EoA"/>

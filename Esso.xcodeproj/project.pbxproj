@@ -84,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85E3A3B1CBDA45F004BA026 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +115,7 @@
 		6F102A4E1CBD9C2000205A5A = {
 			isa = PBXGroup;
 			children = (
+				D85E3A3A1CBDA45F004BA026 /* Quartz.framework */,
 				6F102A591CBD9C2000205A5A /* Esso */,
 				6F102A6B1CBD9C2000205A5A /* EssoTests */,
 				6F102A761CBD9C2000205A5A /* EssoUITests */,
@@ -618,6 +620,7 @@
 				6F102A7E1CBD9C2000205A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F102A7F1CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "EssoTests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +629,7 @@
 				6F102A811CBD9C2000205A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F102A821CBD9C2000205A5A /* Build configuration list for PBXNativeTarget "EssoUITests" */ = {
 			isa = XCConfigurationList;
@@ -634,6 +638,7 @@
 				6F102A841CBD9C2000205A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F102A991CBDA84100205A5A /* Build configuration list for PBXNativeTarget "EssoShare" */ = {
 			isa = XCConfigurationList;
