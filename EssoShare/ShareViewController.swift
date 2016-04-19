@@ -38,7 +38,7 @@ class ShareViewController: NSViewController {
         super.viewDidLoad()
         var f = self.view.frame;
         f.size.width = 800;
-        f.size.height = 600;
+        f.size.height = 400;
         self.view.frame = f;
         
         

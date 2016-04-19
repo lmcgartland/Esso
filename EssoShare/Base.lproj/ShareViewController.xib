@@ -22,8 +22,95 @@
             <subviews>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="zKQ-xg-RDC">
                     <rect key="frame" x="473" y="40" width="216" height="339"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ptq-De-WUA">
+                            <rect key="frame" x="14" y="306" width="37" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Filter" id="FKa-by-LVc">
+                                <font key="font" metaFont="systemSemibold" size="13"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-9Z-RB3">
+                            <rect key="frame" x="16" y="266" width="32" height="32"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="zBj-O5-2Gl"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zfx-YB-rEp">
+                            <rect key="frame" x="54" y="274" width="37" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="None" id="42r-HA-1Vh">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Uyh-7K-67z">
+                            <rect key="frame" x="16" y="255" width="184" height="5"/>
+                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <font key="titleFont" metaFont="system"/>
+                        </box>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nl1-ks-TRF">
+                            <rect key="frame" x="16" y="217" width="32" height="32"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="xcN-xh-KYx"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bSs-24-aZX">
+                            <rect key="frame" x="54" y="225" width="89" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Black &amp; White" id="uM4-t1-EFW">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="1kA-Ud-WzS">
+                            <rect key="frame" x="16" y="206" width="184" height="5"/>
+                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <font key="titleFont" metaFont="system"/>
+                        </box>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-Uo-In3">
+                            <rect key="frame" x="16" y="168" width="32" height="32"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="GeF-Xy-H66"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="USL-yT-6wD">
+                            <rect key="frame" x="54" y="176" width="27" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Eco" id="9wu-Nj-pjH">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="JQ1-RO-PR0">
+                            <rect key="frame" x="16" y="157" width="184" height="5"/>
+                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <font key="titleFont" metaFont="system"/>
+                        </box>
+                    </subviews>
                     <constraints>
+                        <constraint firstItem="JQ1-RO-PR0" firstAttribute="top" secondItem="ckx-Uo-In3" secondAttribute="bottom" constant="8" id="04H-WK-Zx3"/>
+                        <constraint firstAttribute="trailing" secondItem="1kA-Ud-WzS" secondAttribute="trailing" constant="16" id="0vU-Z8-gRt"/>
+                        <constraint firstItem="1kA-Ud-WzS" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="2UK-ol-6xl"/>
+                        <constraint firstItem="zfx-YB-rEp" firstAttribute="leading" secondItem="Ymd-9Z-RB3" secondAttribute="trailing" constant="8" id="7fl-Qh-n13"/>
+                        <constraint firstItem="Uyh-7K-67z" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="9GZ-dv-aEr"/>
+                        <constraint firstItem="1kA-Ud-WzS" firstAttribute="top" secondItem="Nl1-ks-TRF" secondAttribute="bottom" constant="8" id="ARO-vC-nfd"/>
+                        <constraint firstItem="USL-yT-6wD" firstAttribute="leading" secondItem="ckx-Uo-In3" secondAttribute="trailing" constant="8" id="Add-eV-Pve"/>
+                        <constraint firstItem="Ymd-9Z-RB3" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="K90-3T-FWN"/>
                         <constraint firstAttribute="width" constant="216" id="KkF-d1-SMT"/>
+                        <constraint firstItem="Ptq-De-WUA" firstAttribute="top" secondItem="zKQ-xg-RDC" secondAttribute="top" constant="16" id="NJP-bM-FEr"/>
+                        <constraint firstItem="Nl1-ks-TRF" firstAttribute="top" secondItem="Uyh-7K-67z" secondAttribute="bottom" constant="8" id="R0K-ap-4rZ"/>
+                        <constraint firstItem="Ptq-De-WUA" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="Spb-9w-iqR"/>
+                        <constraint firstItem="USL-yT-6wD" firstAttribute="centerY" secondItem="ckx-Uo-In3" secondAttribute="centerY" id="XbM-lw-ylX"/>
+                        <constraint firstItem="Nl1-ks-TRF" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="XpX-2J-3V9"/>
+                        <constraint firstItem="zfx-YB-rEp" firstAttribute="centerY" secondItem="Ymd-9Z-RB3" secondAttribute="centerY" id="Y7f-Eg-bxo"/>
+                        <constraint firstItem="ckx-Uo-In3" firstAttribute="top" secondItem="1kA-Ud-WzS" secondAttribute="bottom" constant="8" id="bY3-Ny-Klt"/>
+                        <constraint firstItem="Ymd-9Z-RB3" firstAttribute="top" secondItem="Ptq-De-WUA" secondAttribute="bottom" constant="8" id="blH-MQ-deX"/>
+                        <constraint firstAttribute="trailing" secondItem="JQ1-RO-PR0" secondAttribute="trailing" constant="16" id="dK5-EZ-gdX"/>
+                        <constraint firstItem="Uyh-7K-67z" firstAttribute="top" secondItem="Ymd-9Z-RB3" secondAttribute="bottom" constant="8" id="hVM-K7-GBH"/>
+                        <constraint firstItem="bSs-24-aZX" firstAttribute="leading" secondItem="Nl1-ks-TRF" secondAttribute="trailing" constant="8" id="isU-AC-6qo"/>
+                        <constraint firstItem="ckx-Uo-In3" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="o7N-9k-Aua"/>
+                        <constraint firstItem="bSs-24-aZX" firstAttribute="centerY" secondItem="Nl1-ks-TRF" secondAttribute="centerY" id="ouH-gS-mMN"/>
+                        <constraint firstAttribute="trailing" secondItem="Uyh-7K-67z" secondAttribute="trailing" constant="16" id="zaP-J9-y99"/>
+                        <constraint firstItem="JQ1-RO-PR0" firstAttribute="leading" secondItem="zKQ-xg-RDC" secondAttribute="leading" constant="16" id="zfD-nd-4aH"/>
                     </constraints>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="FST-TI-aTA">
@@ -50,9 +137,9 @@
                             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <font key="titleFont" metaFont="system"/>
                         </box>
-                        <popUpButton misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-1k-iP5">
-                            <rect key="frame" x="16" y="10" width="63" height="21"/>
-                            <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" imageScaling="proportionallyDown" inset="2" id="Ww8-JZ-PAB">
+                        <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-1k-iP5">
+                            <rect key="frame" x="14" y="5" width="71" height="29"/>
+                            <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" imagePosition="left" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" inset="2" id="Ww8-JZ-PAB">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
                                 <menu key="menu" id="7rH-fU-ciO">
@@ -114,7 +201,7 @@
                         <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-A1-Qup">
                             <rect key="frame" x="82" y="0.0" width="383" height="339"/>
                         </pdfView>
-                        <pdfThumbnailView bezeled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-Gd-UEE" customClass="CustomPDFThumbnailView">
+                        <pdfThumbnailView focusRingType="none" bezeled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-Gd-UEE" customClass="CustomPDFThumbnailView">
                             <rect key="frame" x="8" y="0.0" width="66" height="339"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="66" id="rfH-2p-VjB"/>
@@ -191,4 +278,7 @@
             <point key="canvasLocation" x="428.5" y="309.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="NSColorPanel" width="32" height="32"/>
+    </resources>
 </document>
