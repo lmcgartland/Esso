@@ -12,7 +12,8 @@ import Quartz
 class ShareViewController: NSViewController {
     
     @IBOutlet weak var pdfView: PDFView!
-    @IBOutlet weak var pdfThumbnailView: PDFThumbnailView!
+    @IBOutlet weak var controlsView: NSView!
+    @IBOutlet weak var pdfThumbnailView: CustomPDFThumbnailView!
 
     override var nibName: String? {
         return "ShareViewController"
@@ -20,6 +21,7 @@ class ShareViewController: NSViewController {
 
     override func loadView() {
         super.loadView()
+
     
         // Insert code here to customize the view
         let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
@@ -32,17 +34,22 @@ class ShareViewController: NSViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        var f = self.view.frame;
+        f.size.width = 800;
+        f.size.height = 600;
+        self.view.frame = f;
+        
+        
         
         // Do any additional setup after loading the view.
-        
         let myExtensionContext = self.extensionContext
-        if let items = myExtensionContext?.inputItems {
-            for obj in items {
-                print("Object: \(obj.attributedTitle)")
-            }
-        }
-        
+        /*if let items = myExtensionContext?.inputItems {
+            /*for obj in items {
+                //print("Object: \(obj.attributedTitle)")
+            }*/
+        }*/
         let extensionItem = myExtensionContext?.inputItems.first as! NSExtensionItem
         let itemProvider = extensionItem.attachments?.first as! NSItemProvider
         
@@ -57,13 +64,29 @@ class ShareViewController: NSViewController {
             
         }
         
-        
+        controlsView.layer?.backgroundColor = NSColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.1).CGColor
         pdfView.setBackgroundColor(NSColor.clearColor())
         pdfView.setDisplayBox(kPDFDisplayBoxMediaBox)
         pdfView.setDisplaysPageBreaks(false)
         pdfView.setAutoScales(true)
         
+        //pdfThumbnailView.layer?.backgroundColor = NSColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.1).CGColor
+        
+        /*for subview in pdfThumbnailView.subviews {
+            // Manipulate the view
+            let caLayer = CALayer()
+            caLayer.backgroundColor = NSColor.clearColor().CGColor
+            subview.layer = caLayer
+            /*for subview2 in subview.subviews {
+                // Manipulate the view
+                
+                subview2.layer = caLayer
+                
+            }*/
+        }*/
+        
         pdfThumbnailView.setBackgroundColor(NSColor.clearColor())
+        
     }
 
     @IBAction func send(sender: AnyObject?) {

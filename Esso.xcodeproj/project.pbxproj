@@ -17,6 +17,8 @@
 		6F102A911CBDA84100205A5A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F102A901CBDA84100205A5A /* ShareViewController.swift */; };
 		6F102A941CBDA84100205A5A /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F102A921CBDA84100205A5A /* ShareViewController.xib */; };
 		6F102A981CBDA84100205A5A /* EssoShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F102A8A1CBDA84100205A5A /* EssoShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6FC9B9C11CC5D77E0041A22C /* CustomPDFThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9B9C01CC5D77E0041A22C /* CustomPDFThumbnailView.swift */; };
+		6FC9B9C31CC5E57D0041A22C /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 6FC9B9C21CC5E57D0041A22C /* icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		6F102A901CBDA84100205A5A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		6F102A931CBDA84100205A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		6F102A951CBDA84100205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC9B9C01CC5D77E0041A22C /* CustomPDFThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPDFThumbnailView.swift; sourceTree = "<group>"; };
+		6FC9B9C21CC5E57D0041A22C /* icon */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85E3A3B1CBDA45F004BA026 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +118,6 @@
 		6F102A4E1CBD9C2000205A5A = {
 			isa = PBXGroup;
 			children = (
-				D85E3A3A1CBDA45F004BA026 /* Quartz.framework */,
 				6F102A591CBD9C2000205A5A /* Esso */,
 				6F102A6B1CBD9C2000205A5A /* EssoTests */,
 				6F102A761CBD9C2000205A5A /* EssoUITests */,
@@ -170,7 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				6F102A901CBDA84100205A5A /* ShareViewController.swift */,
+				6FC9B9C01CC5D77E0041A22C /* CustomPDFThumbnailView.swift */,
 				6F102A921CBDA84100205A5A /* ShareViewController.xib */,
+				6FC9B9C21CC5E57D0041A22C /* icon */,
 				6F102A951CBDA84100205A5A /* Info.plist */,
 				6F102A8C1CBDA84100205A5A /* Supporting Files */,
 			);
@@ -338,6 +342,7 @@
 			files = (
 				6F102A941CBDA84100205A5A /* ShareViewController.xib in Resources */,
 				6F102A8E1CBDA84100205A5A /* icon.icns in Resources */,
+				6FC9B9C31CC5E57D0041A22C /* icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F102A911CBDA84100205A5A /* ShareViewController.swift in Sources */,
+				6FC9B9C11CC5D77E0041A22C /* CustomPDFThumbnailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +653,7 @@
 				6F102A9B1CBDA84100205A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
