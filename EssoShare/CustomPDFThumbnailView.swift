@@ -13,7 +13,8 @@ class CustomPDFThumbnailView: PDFThumbnailView {
     override init (frame : CGRect) {
         super.init(frame : frame)
         self.setBackgroundColor(NSColor.clearColor())
-        //addBehavior()
+        
+        addBehavior()
     }
     
     convenience init () {
@@ -25,6 +26,6 @@ class CustomPDFThumbnailView: PDFThumbnailView {
     }
     
     func addBehavior (){
-        //print("Add all the behavior here")
+        print("Add all the behavior here")
     }
 }

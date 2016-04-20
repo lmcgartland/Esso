@@ -69,23 +69,16 @@ class ShareViewController: NSViewController {
         pdfView.setDisplayBox(kPDFDisplayBoxMediaBox)
         pdfView.setDisplaysPageBreaks(false)
         pdfView.setAutoScales(true)
+        pdfView.setScaleFactor(0.85)
         
-        //pdfThumbnailView.layer?.backgroundColor = NSColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.1).CGColor
         
-        /*for subview in pdfThumbnailView.subviews {
-            // Manipulate the view
-            let caLayer = CALayer()
-            caLayer.backgroundColor = NSColor.clearColor().CGColor
-            subview.layer = caLayer
-            /*for subview2 in subview.subviews {
-                // Manipulate the view
-                
-                subview2.layer = caLayer
-                
-            }*/
-        }*/
         
-        pdfThumbnailView.setBackgroundColor(NSColor.clearColor())
+        //pdfThumbnailView.layer?.backgroundColor = NSColor(colorLiteralRed: 0.5, green: 0, blue: 0, alpha: 1).CGColor
+        //let subview = pdfThumbnailView.subviews[0] as! NSScrollView
+        //subview.drawsBackground = false
+        //subview.contentView.backgroundColor = NSColor(colorLiteralRed: 1, green: 0, blue: 0, alpha: 0)
+        //subview.contentView.subviews[0].layer?.backgroundColor = NSColor(colorLiteralRed: 0.5, green: 0, blue: 0, alpha: 1).CGColor
+        //pdfThumbnailView.setBackgroundColor(NSColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0))
         
     }
 

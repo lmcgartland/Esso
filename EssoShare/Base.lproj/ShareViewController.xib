@@ -199,10 +199,10 @@
                     <rect key="frame" x="0.0" y="40" width="473" height="339"/>
                     <subviews>
                         <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-A1-Qup">
-                            <rect key="frame" x="82" y="0.0" width="383" height="339"/>
+                            <rect key="frame" x="66" y="0.0" width="407" height="339"/>
                         </pdfView>
                         <pdfThumbnailView focusRingType="none" bezeled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-Gd-UEE" customClass="CustomPDFThumbnailView">
-                            <rect key="frame" x="8" y="0.0" width="66" height="339"/>
+                            <rect key="frame" x="0.0" y="0.0" width="66" height="339"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="66" id="rfH-2p-VjB"/>
                             </constraints>
@@ -213,11 +213,11 @@
                         </pdfThumbnailView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="tZp-A1-Qup" firstAttribute="leading" secondItem="rdT-Gd-UEE" secondAttribute="trailing" constant="8" id="7qo-RI-0uC"/>
+                        <constraint firstItem="tZp-A1-Qup" firstAttribute="leading" secondItem="rdT-Gd-UEE" secondAttribute="trailing" id="7qo-RI-0uC"/>
                         <constraint firstAttribute="bottom" secondItem="tZp-A1-Qup" secondAttribute="bottom" id="Dja-MK-tij"/>
                         <constraint firstItem="rdT-Gd-UEE" firstAttribute="top" secondItem="wGZ-7q-idr" secondAttribute="top" id="RbN-U7-eZF"/>
-                        <constraint firstAttribute="trailing" secondItem="tZp-A1-Qup" secondAttribute="trailing" constant="8" id="Sis-6W-DQE"/>
-                        <constraint firstItem="rdT-Gd-UEE" firstAttribute="leading" secondItem="wGZ-7q-idr" secondAttribute="leading" constant="8" id="Ts8-Jc-hGM"/>
+                        <constraint firstAttribute="trailing" secondItem="tZp-A1-Qup" secondAttribute="trailing" id="Sis-6W-DQE"/>
+                        <constraint firstItem="rdT-Gd-UEE" firstAttribute="leading" secondItem="wGZ-7q-idr" secondAttribute="leading" id="Ts8-Jc-hGM"/>
                         <constraint firstAttribute="bottom" secondItem="rdT-Gd-UEE" secondAttribute="bottom" id="ecX-4J-QLB"/>
                         <constraint firstItem="tZp-A1-Qup" firstAttribute="top" secondItem="wGZ-7q-idr" secondAttribute="top" id="teL-lF-JNz"/>
                     </constraints>
