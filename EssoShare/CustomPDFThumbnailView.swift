@@ -13,18 +13,19 @@ class CustomPDFThumbnailView: PDFThumbnailView {
     override init (frame : CGRect) {
         super.init(frame : frame)
         self.setBackgroundColor(NSColor.clearColor())
-        //addBehavior()
+        addBehavior()
     }
     
     convenience init () {
         self.init(frame:CGRect.zero)
     }
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("This class does not support NSCoding")
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        addBehavior()
     }
     
     func addBehavior (){
-        //print("Add all the behavior here")
+        Swift.print("Add all the behavior here")
     }
 }
