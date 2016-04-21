@@ -19,6 +19,7 @@
 		6F102A981CBDA84100205A5A /* EssoShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F102A8A1CBDA84100205A5A /* EssoShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6FC9B9C11CC5D77E0041A22C /* CustomPDFThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9B9C01CC5D77E0041A22C /* CustomPDFThumbnailView.swift */; };
 		6FC9B9C31CC5E57D0041A22C /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 6FC9B9C21CC5E57D0041A22C /* icon */; };
+		D87F47C31CC989DF00FA2C8E /* CustomSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F47C21CC989DF00FA2C8E /* CustomSegmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		6F102A951CBDA84100205A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FC9B9C01CC5D77E0041A22C /* CustomPDFThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPDFThumbnailView.swift; sourceTree = "<group>"; };
 		6FC9B9C21CC5E57D0041A22C /* icon */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon; sourceTree = "<group>"; };
+		D87F47C21CC989DF00FA2C8E /* CustomSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		6F102A8B1CBDA84100205A5A /* EssoShare */ = {
 			isa = PBXGroup;
 			children = (
+				D87F47C21CC989DF00FA2C8E /* CustomSegmentView.swift */,
 				6F102A901CBDA84100205A5A /* ShareViewController.swift */,
 				6FC9B9C01CC5D77E0041A22C /* CustomPDFThumbnailView.swift */,
 				6F102A921CBDA84100205A5A /* ShareViewController.xib */,
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F102A911CBDA84100205A5A /* ShareViewController.swift in Sources */,
+				D87F47C31CC989DF00FA2C8E /* CustomSegmentView.swift in Sources */,
 				6FC9B9C11CC5D77E0041A22C /* CustomPDFThumbnailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
