@@ -9,11 +9,21 @@
 import Cocoa
 import Quartz
 
+enum EssoFilter {
+    case None
+    case BlackWhite
+    case Eco
+}
+
 class ShareViewController: NSViewController {
     
     @IBOutlet weak var pdfView: PDFView!
     @IBOutlet weak var controlsView: NSView!
     @IBOutlet weak var pdfThumbnailView: CustomPDFThumbnailView!
+    
+    @IBOutlet weak var filterSegmentNone: CustomSegmentView!
+    @IBOutlet weak var filterSegmentBW: CustomSegmentView!
+    @IBOutlet weak var filterSegmentEco: CustomSegmentView!
 
     override var nibName: String? {
         return "ShareViewController"
@@ -80,6 +90,30 @@ class ShareViewController: NSViewController {
         //subview.contentView.subviews[0].layer?.backgroundColor = NSColor(colorLiteralRed: 0.5, green: 0, blue: 0, alpha: 1).CGColor
         //pdfThumbnailView.setBackgroundColor(NSColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0))
         
+    }
+
+    func setFilter(filter: EssoFilter) {
+        switch filter {
+        case .None:
+            print("None")
+        case .BlackWhite:
+            print("BlackWhite")
+        case .Eco:
+            print("Eco")
+        }
+    }
+    
+    @IBAction func segmentSelected(sender: NSButton?) {
+        print("Some button pressed")
+        if let selectedSegment = sender {
+            if selectedSegment == self.filterSegmentNone.button {
+                self.setFilter(.None)
+            } else if selectedSegment == self.filterSegmentBW.button {
+                self.setFilter(.BlackWhite)
+            } else if selectedSegment == self.filterSegmentEco.button {
+                self.setFilter(.Eco)
+            }
+        }
     }
 
     @IBAction func send(sender: AnyObject?) {

@@ -21,8 +21,9 @@ class CustomPDFThumbnailView: PDFThumbnailView {
         self.init(frame:CGRect.zero)
     }
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("This class does not support NSCoding")
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        addBehavior()
     }
     
     func addBehavior (){
