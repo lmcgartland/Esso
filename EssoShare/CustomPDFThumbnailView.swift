@@ -13,6 +13,7 @@ class CustomPDFThumbnailView: PDFThumbnailView {
     override init (frame : CGRect) {
         super.init(frame : frame)
         self.setBackgroundColor(NSColor.clearColor())
+        
         addBehavior()
     }
     
