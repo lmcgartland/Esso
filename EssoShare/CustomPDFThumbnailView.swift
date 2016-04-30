@@ -27,6 +27,6 @@ class CustomPDFThumbnailView: PDFThumbnailView {
     }
     
     func addBehavior (){
-        print("Add all the behavior here")
+        Swift.print("Add all the behavior here")
     }
 }

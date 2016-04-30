@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
-        <plugIn identifier="com.apple.pdfkit.ibplugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="10116"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ShareViewController" customModule="EssoShare" customModuleProvider="target">
             <connections>
                 <outlet property="controlsView" destination="zKQ-xg-RDC" id="TXr-39-3o8"/>
+                <outlet property="copiesLabel" destination="11j-tB-QbR" id="bFC-sv-puJ"/>
                 <outlet property="filterSegmentBW" destination="M2v-iz-DMh" id="PIh-ev-ciB"/>
                 <outlet property="filterSegmentEco" destination="Ppw-Br-07Y" id="FWN-R7-xtK"/>
                 <outlet property="filterSegmentNone" destination="5oU-lW-rdE" id="QcI-eh-PeG"/>
-                <outlet property="pdfThumbnailView" destination="rdT-Gd-UEE" id="WIe-ia-IFb"/>
+                <outlet property="pagesLabel" destination="8ok-Hk-YaP" id="GAX-ug-HdH"/>
+                <outlet property="pdfThumbnailView" destination="7TW-9j-7fH" id="ZHd-xk-2nZ"/>
                 <outlet property="pdfView" destination="tZp-A1-Qup" id="VK1-n4-OjT"/>
                 <outlet property="view" destination="lwn-ci-KFc" id="32C-hW-jg7"/>
             </connections>
@@ -212,6 +214,9 @@
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="sendToPrinter:" target="-2" id="m6D-hE-KzJ"/>
+                            </connections>
                         </button>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8ok-Hk-YaP">
                             <rect key="frame" x="568" y="12" width="44" height="17"/>
@@ -228,40 +233,47 @@
                             <font key="titleFont" metaFont="system"/>
                         </box>
                         <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-1k-iP5">
-                            <rect key="frame" x="14" y="5" width="71" height="29"/>
+                            <rect key="frame" x="14" y="5" width="76" height="29"/>
                             <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" imagePosition="left" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" inset="2" id="Ww8-JZ-PAB">
-                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
                                 <menu key="menu" id="7rH-fU-ciO">
                                     <items>
                                         <menuItem title="Esso" id="zwA-Im-gZe"/>
-                                        <menuItem title="Item 2" id="9G2-pi-R1S"/>
-                                        <menuItem title="Item 3" id="z8m-qf-owu"/>
+                                        <menuItem title="Garage" id="z8m-qf-owu">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </popUpButtonCell>
                         </popUpButton>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-zf-YLX">
-                            <rect key="frame" x="275" y="3" width="47" height="32"/>
+                            <rect key="frame" x="276" y="3" width="47" height="32"/>
                             <buttonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="leE-dY-Mfw">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="decreaseCopies:" target="-2" id="Kau-Of-G4D"/>
+                            </connections>
                         </button>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="11j-tB-QbR">
-                            <rect key="frame" x="322" y="12" width="45" height="17"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1 Copy" id="EbX-t1-3SA">
+                            <rect key="frame" x="323" y="12" width="43" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1 copy" id="EbX-t1-3SA">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k2m-3g-qYW">
-                            <rect key="frame" x="367" y="3" width="49" height="32"/>
+                            <rect key="frame" x="366" y="3" width="49" height="32"/>
                             <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u2t-Jb-XLu">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="increaseCopies:" target="-2" id="ciX-0k-bBw"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -288,27 +300,21 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="wGZ-7q-idr">
                     <rect key="frame" x="0.0" y="40" width="473" height="339"/>
                     <subviews>
-                        <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-A1-Qup">
-                            <rect key="frame" x="66" y="0.0" width="407" height="339"/>
-                        </pdfView>
-                        <pdfThumbnailView focusRingType="none" bezeled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-Gd-UEE" customClass="CustomPDFThumbnailView">
-                            <rect key="frame" x="0.0" y="0.0" width="66" height="339"/>
+                        <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TW-9j-7fH">
+                            <rect key="frame" x="16" y="0.0" width="80" height="339"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="66" id="rfH-2p-VjB"/>
+                                <constraint firstAttribute="width" constant="80" id="VZi-ph-PvC"/>
                             </constraints>
-                            <size key="thumbnailSize" width="64" height="64"/>
-                            <connections>
-                                <outlet property="pdfView" destination="tZp-A1-Qup" id="DcW-ek-anr"/>
-                            </connections>
-                        </pdfThumbnailView>
+                        </pdfView>
+                        <pdfView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-A1-Qup">
+                            <rect key="frame" x="112" y="0.0" width="345" height="339"/>
+                        </pdfView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="tZp-A1-Qup" firstAttribute="leading" secondItem="rdT-Gd-UEE" secondAttribute="trailing" id="7qo-RI-0uC"/>
+                        <constraint firstItem="tZp-A1-Qup" firstAttribute="leading" secondItem="7TW-9j-7fH" secondAttribute="trailing" constant="16" id="8xz-4W-VqQ"/>
                         <constraint firstAttribute="bottom" secondItem="tZp-A1-Qup" secondAttribute="bottom" id="Dja-MK-tij"/>
-                        <constraint firstItem="rdT-Gd-UEE" firstAttribute="top" secondItem="wGZ-7q-idr" secondAttribute="top" id="RbN-U7-eZF"/>
-                        <constraint firstAttribute="trailing" secondItem="tZp-A1-Qup" secondAttribute="trailing" id="Sis-6W-DQE"/>
-                        <constraint firstItem="rdT-Gd-UEE" firstAttribute="leading" secondItem="wGZ-7q-idr" secondAttribute="leading" id="Ts8-Jc-hGM"/>
-                        <constraint firstAttribute="bottom" secondItem="rdT-Gd-UEE" secondAttribute="bottom" id="ecX-4J-QLB"/>
+                        <constraint firstAttribute="trailing" secondItem="tZp-A1-Qup" secondAttribute="trailing" constant="16" id="Sis-6W-DQE"/>
+                        <constraint firstItem="7TW-9j-7fH" firstAttribute="leading" secondItem="wGZ-7q-idr" secondAttribute="leading" constant="16" id="YVC-aP-eUc"/>
                         <constraint firstItem="tZp-A1-Qup" firstAttribute="top" secondItem="wGZ-7q-idr" secondAttribute="top" id="teL-lF-JNz"/>
                     </constraints>
                 </customView>
@@ -329,6 +335,9 @@
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <connections>
+                                <action selector="cancel:" target="-2" id="eN5-E8-BBn"/>
+                            </connections>
                         </button>
                         <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="UCO-hp-a4j">
                             <rect key="frame" x="0.0" y="-2" width="689" height="5"/>
@@ -363,8 +372,10 @@
                 <constraint firstItem="Cs7-Zb-iGg" firstAttribute="top" secondItem="lwn-ci-KFc" secondAttribute="top" id="QlW-bf-X3z"/>
                 <constraint firstItem="Cs7-Zb-iGg" firstAttribute="top" secondItem="lwn-ci-KFc" secondAttribute="top" id="RmD-CK-Zk9"/>
                 <constraint firstItem="zKQ-xg-RDC" firstAttribute="top" secondItem="Cs7-Zb-iGg" secondAttribute="bottom" id="TdH-DH-8Uu"/>
+                <constraint firstItem="7TW-9j-7fH" firstAttribute="top" secondItem="Cs7-Zb-iGg" secondAttribute="bottom" id="Trd-XO-g9X"/>
                 <constraint firstAttribute="trailing" secondItem="zKQ-xg-RDC" secondAttribute="trailing" id="W7D-Ww-AvP"/>
                 <constraint firstItem="FST-TI-aTA" firstAttribute="top" secondItem="zKQ-xg-RDC" secondAttribute="bottom" id="Wf5-P0-aVp"/>
+                <constraint firstItem="FST-TI-aTA" firstAttribute="top" secondItem="7TW-9j-7fH" secondAttribute="bottom" id="fce-f4-rz3"/>
                 <constraint firstItem="wGZ-7q-idr" firstAttribute="leading" secondItem="lwn-ci-KFc" secondAttribute="leading" id="ipr-l4-HOo"/>
             </constraints>
             <point key="canvasLocation" x="428.5" y="309.5"/>
