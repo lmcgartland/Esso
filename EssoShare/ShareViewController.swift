@@ -31,6 +31,7 @@ class ShareViewController: NSViewController {
     
     var copies = 1;
     var pages = 0;
+    var pdfDoc: PDFDocument = PDFDocument()
 
 
     override var nibName: String? {
@@ -94,10 +95,10 @@ class ShareViewController: NSViewController {
         itemProvider.loadItemForTypeIdentifier("com.adobe.pdf", options: nil) { [unowned self] (result: NSSecureCoding?, error: NSError!) -> Void in
             if let data = result as? NSData {
                 dispatch_async(dispatch_get_main_queue(),{
-                    let pdfDoc = PDFDocument(data: data)
+                    self.pdfDoc = PDFDocument(data: data)
                     let thumbnailDoc = PDFDocument(data: data)
-                    self.pages = pdfDoc.pageCount()
-                    self.pdfView.setDocument(pdfDoc)
+                    self.pages = self.pdfDoc.pageCount()
+                    self.pdfView.setDocument(self.pdfDoc)
                     self.pdfThumbnailView.setDocument(thumbnailDoc)
                     self.updateLabels()
                 })
@@ -180,6 +181,18 @@ class ShareViewController: NSViewController {
     }
     @IBAction func sendToPrinter(sender: NSButton?) {
         print("Print button pressed")
+        /*NSPrintOperation *op = [myPDFDoc getPrintOperationForPrintInfo:info autoRotate:YES];
+        [op runOperation];*/
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            // do some task
+            let printer = PrinterContainer()
+            printer.printPDF(self.pdfDoc)
+            dispatch_async(dispatch_get_main_queue()) {
+                // update some UI
+            }
+        }
+        
     }
     
     func updateLabels(){
