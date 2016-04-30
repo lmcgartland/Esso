@@ -9,39 +9,49 @@
 #import "PrinterContainer.h"
 #import <Quartz/Quartz.h>
 
+#define kMimeType @"application/pdf"
+
 @implementation PrinterContainer
 
 - (void)printPDF:(PDFDocument *)pdfDocument {
+    [self printData:[pdfDocument dataRepresentation]];
+}
+
+- (void)printData:(NSData *)incomingPrintData {
+    CFArrayRef printerList; //will soon be an array of PMPrinter objects
+    PMServerCreatePrinterList(kPMServerLocal, &printerList);
+    //
     
-    // Create the print settings.
-    NSPrintInfo *printInfo = [NSPrintInfo sharedPrintInfo];
-    [printInfo setTopMargin:0.0];
-    [printInfo setBottomMargin:0.0];
-    [printInfo setLeftMargin:0.0];
-    [printInfo setRightMargin:0.0];
-    [printInfo setHorizontalPagination:NSFitPagination];
-    [printInfo setVerticalPagination:NSFitPagination];
+    //iterate over printerList and determine which one you want, assign to myPrinter
+    PMPrinter myPrinter = (PMPrinter)CFArrayGetValueAtIndex(printerList, 0);
     
-    // Create the document reference.
+    PMPrintSession printSession;
+    PMPrintSettings printSettings;
+    PMCreateSession(&printSession);
+    PMCreatePrintSettings(&printSettings);
+    PMSessionDefaultPrintSettings(printSession, printSettings);
     
-    // Invoke private method.
-    // NOTE: Use NSInvocation because one argument is a BOOL type. Alternately, you could declare the method in a category and just call it.
-    BOOL autoRotate = YES;
-    NSMethodSignature *signature = [PDFDocument instanceMethodSignatureForSelector:@selector(getPrintOperationForPrintInfo:autoRotate:)];
-    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
-    [invocation setSelector:@selector(getPrintOperationForPrintInfo:autoRotate:)];
-    [invocation setArgument:&printInfo atIndex:2];
-    [invocation setArgument:&autoRotate atIndex:3];
-    [invocation invokeWithTarget:pdfDocument];
+    CFArrayRef paperList;
+    PMPrinterGetPaperList(myPrinter, &paperList);
+    PMPaper usingPaper = (PMPaper)CFArrayGetValueAtIndex(paperList, 0);
     
-    // Grab the returned print operation.
-    NSPrintOperation *op = nil;
-    [invocation getReturnValue:&op];
+    PMPageFormat pageFormat;
+    PMCreatePageFormatWithPMPaper(&pageFormat, usingPaper);
     
-    // Run the print operation without showing any dialogs.
-    [op setShowsPrintPanel:NO];
-    [op setShowsProgressPanel:NO];
-    [op runOperation];
+    CGDataProviderRef dataProvider = CGDataProviderCreateWithCFData((CFDataRef)incomingPrintData);
+    PMPrinterPrintWithProvider(myPrinter, printSettings, pageFormat, (CFStringRef)kMimeType, dataProvider);
+    
+    // Clean up
+    
+    CFRelease(printerList);
+    
+    PMRelease(printSession);
+    PMRelease(printSettings);
+    
+    CFRelease(paperList);
+    
+    PMRelease(pageFormat);
+    CGDataProviderRelease(dataProvider);
 }
 
 
