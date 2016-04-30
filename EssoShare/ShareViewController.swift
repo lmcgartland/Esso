@@ -97,16 +97,27 @@ class ShareViewController: NSViewController {
         
         pdfThumbnailView.setBackgroundColor(NSColor.clearColor())
         
+        self.setFilter(.None);
+        
     }
 
     func setFilter(filter: EssoFilter) {
         switch filter {
         case .None:
             print("None")
+            self.filterSegmentNone.setSelected(true)
+            self.filterSegmentBW.setSelected(false)
+            self.filterSegmentEco.setSelected(false)
         case .BlackWhite:
             print("BlackWhite")
+            self.filterSegmentNone.setSelected(false)
+            self.filterSegmentBW.setSelected(true)
+            self.filterSegmentEco.setSelected(false)
         case .Eco:
             print("Eco")
+            self.filterSegmentNone.setSelected(false)
+            self.filterSegmentBW.setSelected(false)
+            self.filterSegmentEco.setSelected(true)
         }
     }
     
